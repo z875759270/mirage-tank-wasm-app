@@ -2,7 +2,7 @@ name: Build and Export Dist
 
 on:
   push:
-    branches: ["main"]  # 触发分支（默认 main/master）
+    branches: ["master"]  # 触发分支（默认 main/master）
 
 jobs:
   build:
