@@ -19,9 +19,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fix config typo
-        run: mv tslin.json tslint.json  # 修复拼写错误（原问题中的 tslin.json）
-
       - name: Build project
         run: npm run build  # 生成 dist 目录
 
