@@ -20,7 +20,9 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build  # 生成 dist 目录
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider  # 添加这一行
+        run: npm run build
 
       - name: Upload dist as artifact
         uses: actions/upload-artifact@v4
